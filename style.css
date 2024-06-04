@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "M PLUS 2", sans-serif;
+}
+
+body {
+    background-image: url(./assets/bg1.png);
+    background-size: cover;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+}
+
+.main .photo {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .photo img {
+    margin: auto;
+    width: 100%;
+}
+
+.main .main-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.main .main-description h1 {
+    font-size: 96px;
+    font-family: "Keania One", sans-serif;
+    margin: 0;
+    color: #9D9DA7;
+    font-weight: 600;
+}
+
+.main .main-description h3 {
+    font-size: 64px;
+    font-family: "Keania One", sans-serif;
+}
+
+.main .main-description h2 {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.main .main-description p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.project-title {
+    margin: auto;
+    font-size: 40px;
+}
+
+.project-text {
+    width: 60%;
+}
+
+.project1,
+.project3 {
+    display: flex;
+    align-items: center;
+}
+
+.project2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.project-name {
+    font-size: 40px;
+    text-align: center;
+}
+
+.project-description {
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact {
+    background-image: url(./assets/bg2.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+a,
+li-a:hover {
+    cursor: pointer;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    body {
+        min-width: 100vw;
+    }
+
+    .main {
+        flex-direction: column;
+        margin: 15px auto;
+        align-items: center;
+    }
+
+    .main .photo {
+        width: 100%;
+    }
+
+    .main .photo img {
+        max-width: 60%;
+    }
+
+    .main .main-description {
+        min-width: 100%;
+        border: none;
+        padding: 0 10px;
+    }
+
+    .main .main-description h1 {
+        font-size: 48px;
+    }
+
+    .main .main-description h3 {
+        font-size: 32px;
+    }
+
+    .main .main-description h2 {
+        font-size: 28px;
+    }
+
+    .main .main-description p {
+        font-size: 16px;
+    }
+
+    .projects {
+        padding: 20px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .project-title {
+        font-size: 32px;
+    }
+
+    .projects img {
+        width: 80%;
+    }
+
+    .project1,
+    .project2,
+    .project3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-text {
+        width: 100%;
+    }
+
+    .project-name {
+        font-size: 24px;
+    }
+
+    .project-description {
+        font-size: 16px;
+    }
+
+    .contact {
+        padding: 15px 10px;
+    }
+
+
+}
+
+.maincontainer {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.incard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    border-left: rgba(255, 255, 255, 0.342) 1px solid;
+    border-top: rgba(255, 255, 255, 0.342) 1px solid;
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+    color: white;
+    backface-visibility: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transition: 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.front {
+    background: rgba(255, 255, 255, 0.109);
+    transform: rotateY(0deg);
+    padding: 10px;
+}
+
+.back {
+    background: rgba(255, 255, 255, 0.109);
+    transform: rotateY(180deg);
+    padding: 10px;
+}
+
+.maincontainer:hover>.front {
+    transform: rotateY(-180deg);
+}
+
+.maincontainer:hover>.back {
+    transform: rotateY(0deg);
+}
+
+.btn {
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.21);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    padding: 10px 40px;
+    background: white;
+    color: black;
+}
+
+.crdsec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+
+
+}
+
+.contar {
+    display: flex;
+    flex-direction: column;
+}
