@@ -155,7 +155,7 @@ li-a:hover {
     }
 
     .main .main-description {
-        min-width: 100%;
+        min-width: 90%;
         border: none;
         padding: 0 10px;
     }
@@ -211,6 +211,19 @@ li-a:hover {
 
     .contact {
         padding: 15px 10px;
+    }
+
+    .tech-icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .html,
+    .css,
+    .javascript,
+    .react {
+        width: 90vw;
     }
 
 
