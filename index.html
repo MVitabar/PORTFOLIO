@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio of Martin Vitabar - Front-End Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Martin Vitabar, a dedicated Front-End Developer specializing in creating interactive and engaging web experiences with HTML, CSS, and JavaScript."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,12 +16,26 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="./scripts.js"></script>
-    <title>Portfolio</title>
+    <!-- Google Translate -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: "en",
+          autoDisplay: true,
+        });
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
   </head>
   <body>
+    <div id="google_translate_element"></div>
+
     <section class="main">
       <div class="photo">
-        <img src="./assets/photo1.png" alt="profile photo" />
+        <img src="./assets/photo1.png" alt="Profile photo of Martin Vitabar" />
       </div>
       <div class="main-description">
         <h1 class="main-title">Hey! I’m Martin</h1>
@@ -25,110 +44,161 @@
         <p class="description">
           I am Martin Vitabar, a dedicated Front-End Developer with experience
           in creating interactive and engaging web experiences. HTML, CSS, and
-          JavaScript are my playground, I specialize in developing intuitive and
+          JavaScript are my playground. I specialize in developing intuitive and
           functional user interfaces. My background includes freelance work
           crafting responsive landing pages, sales sites, and portfolios,
           ensuring optimal user experience across devices. With a passion for
           technology and continuous learning, I am committed to excellence in
           software development.
         </p>
+        <div class="icons">
+          <a href="https://wa.link/hdm9oc" target="_blank">
+            <img
+              src="./assets/whatsapp.png"
+              alt="WhatsApp contact"
+              class="whatsapp"
+            />
+          </a>
+          <a href="https://github.com/MVitabar" target="_blank">
+            <img
+              src="./assets/github.png"
+              alt="GitHub profile"
+              class="github"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/martin-vitabar/" target="_blank">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn profile"
+              class="linkedin"
+            />
+          </a>
+        </div>
       </div>
     </section>
+
     <section class="projects">
       <div class="project-title">
-        <h2>PROJECTS</h2>
+        <h2>Projects</h2>
       </div>
       <div class="project1">
         <div class="poject-text">
-          <h3 class="project-name">BURGER SHOP</h3>
+          <h3 class="project-name">Burger Shop</h3>
           <p class="project-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-            quas architecto, autem incidunt expedita voluptas nisi aperiam nobis
-            tempora veniam quae minus corrupti perferendis quis eius consectetur
-            iusto error quaerat!
+            A comprehensive project for a Burger Shop featuring a full menu,
+            online ordering system, and responsive design.
           </p>
         </div>
         <div class="image1">
-          <img src="./assets/mock1.png" alt="burger-shop mock-up" />
+          <img src="./assets/mock1.png" alt="Burger Shop project mock-up" />
         </div>
       </div>
       <div class="project2">
         <div class="poject-text">
-          <h3 class="project-name">TATTOO SHOP</h3>
+          <h3 class="project-name">Tattoo Shop</h3>
           <p class="project-description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Repellendus, magni nesciunt nam ipsa consequatur adipisci recusandae
-            quam! Quis ipsa accusamus repudiandae, laboriosam suscipit ad
-            quisquam neque laudantium minima in velit?
+            A stylish and modern landing page for a Tattoo Shop, showcasing
+            various tattoo designs and artist profiles.
           </p>
         </div>
         <div class="image2">
-          <img src="./assets/mock2.png" alt="tattoo shop landpage" />
+          <img src="./assets/mock2.png" alt="Tattoo Shop landing page" />
         </div>
       </div>
       <div class="project3">
         <div class="poject-text">
-          <h3 class="project-name">FESTA EVENTS</h3>
+          <h3 class="project-name">Festa Events</h3>
           <p class="project-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-            nesciunt iure alias numquam fugit similique earum? Atque consectetur
-            saepe commodi, necessitatibus, labore deleniti corporis repellat
-            facere a provident minima maxime?
+            An event management platform for FESTA Events, featuring event
+            listings, ticket sales, and user profiles.
           </p>
         </div>
         <div class="image3">
-          <img src="./assets/mock3.png" alt="festa-events landpage" />
+          <img src="./assets/mock3.png" alt="FESTA Events landing page" />
         </div>
       </div>
-      <a href="#" class="more">AND MORE PROJECTS</a>
     </section>
+
+    <section class="technologies">
+      <h2>Technologies That I Use</h2>
+      <div class="tech-icons">
+        <div class="html">
+          <img src="./assets/html-5.png" alt="HTML5 logo" />
+          <p>
+            HTML5: The latest version of Hypertext Markup Language, the code
+            that describes web pages. It provides better flexibility and
+            efficiency.
+          </p>
+        </div>
+        <div class="css">
+          <img src="./assets/css-3.png" alt="CSS3 logo" />
+          <p>
+            CSS3: The latest version of Cascading Style Sheets, used to style
+            and layout web pages — for example, to alter the font, color, size,
+            and spacing of your content.
+          </p>
+        </div>
+        <div class="javascript">
+          <img src="./assets/js.png" alt="JavaScript logo" />
+          <p>
+            JavaScript: A programming language that allows you to implement
+            complex things on web pages. It is the third layer of the layer cake
+            of standard web technologies.
+          </p>
+        </div>
+        <div class="react">
+          <img src="./assets/icons8-react-80.png" alt="React logo" />
+          <p>
+            React: A JavaScript library for building user interfaces. It allows
+            developers to create large web applications that can update and
+            render efficiently in response to data changes.
+          </p>
+        </div>
+      </div>
+      <a href="#" class="more">And More Projects</a>
+    </section>
+
     <section class="contar">
       <div class="crdsec">
         <div class="maincontainer">
           <div class="incard front">
-            <img src="./assets/mock4.png" alt="" />
+            <img src="./assets/mock4.png" alt="Project 4 mock-up" />
           </div>
           <div class="incard back">
             <h1>BACK</h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-              veniam perferendis, quisquam dolorum suscipit cupiditate nam saepe
-              fugit quasi reprehenderit quod? Cupiditate, harum quae eius libero
-              porro unde accusantium repellat?
+              Details about Project 4, including objectives, technologies used,
+              and unique features.
             </p>
-            <a href="" class="btn">BOTÓN</a>
+            <a href="#" class="btn">Learn More</a>
           </div>
         </div>
 
         <div class="maincontainer">
           <div class="incard front">
-            <img src="./assets/mock5.png" alt="" />
+            <img src="./assets/mock5.png" alt="Project 5 mock-up" />
           </div>
           <div class="incard back">
             <h1>BACK</h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-              veniam perferendis, quisquam dolorum suscipit cupiditate nam saepe
-              fugit quasi reprehenderit quod? Cupiditate, harum quae eius libero
-              porro unde accusantium repellat?
+              Information about Project 5, showcasing its purpose, scope, and
+              key elements.
             </p>
-            <a href="" class="btn">BOTÓN</a>
+            <a href="#" class="btn">Learn More</a>
           </div>
         </div>
 
         <div class="maincontainer">
           <div class="incard front">
-            <img src="./assets/mock6.png" alt="" />
+            <img src="./assets/mock6.png" alt="Project 6 mock-up" />
           </div>
           <div class="incard back">
             <h1>BACK</h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-              veniam perferendis, quisquam dolorum suscipit cupiditate nam saepe
-              fugit quasi reprehenderit quod? Cupiditate, harum quae eius libero
-              porro unde accusantium repellat?
+              Overview of Project 6, including main features, design approach,
+              and outcomes.
             </p>
-            <a href="" class="btn">BOTÓN</a>
+            <a href="#" class="btn">Learn More</a>
           </div>
         </div>
       </div>
@@ -136,63 +206,76 @@
       <div class="crdsec">
         <div class="maincontainer">
           <div class="incard front">
-            <img src="./assets/mock7.png" alt="" />
+            <img src="./assets/mock7.png" alt="Project 7 mock-up" />
           </div>
           <div class="incard back">
             <h1>BACK</h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-              veniam perferendis, quisquam dolorum suscipit cupiditate nam saepe
-              fugit quasi reprehenderit quod? Cupiditate, harum quae eius libero
-              porro unde accusantium repellat?
+              Description of Project 7, detailing its goals, technical stack,
+              and challenges faced.
             </p>
-            <a href="" class="btn">BOTÓN</a>
+            <a href="#" class="btn">Learn More</a>
           </div>
         </div>
 
         <div class="maincontainer">
           <div class="incard front">
-            <img src="./assets/mock8.png" alt="" />
+            <img src="./assets/mock8.png" alt="Project 8 mock-up" />
           </div>
           <div class="incard back">
             <h1>BACK</h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-              veniam perferendis, quisquam dolorum suscipit cupiditate nam saepe
-              fugit quasi reprehenderit quod? Cupiditate, harum quae eius libero
-              porro unde accusantium repellat?
+              Insights into Project 8, highlighting key functionalities, user
+              interface, and feedback.
             </p>
-            <a href="" class="btn">BOTÓN</a>
+            <a href="#" class="btn">Learn More</a>
           </div>
         </div>
 
         <div class="maincontainer">
           <div class="incard front">
-            <img src="./assets/mock9.png" alt="" />
+            <img src="./assets/mock9.png" alt="Project 9 mock-up" />
           </div>
           <div class="incard back">
             <h1>BACK</h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt
-              veniam perferendis, quisquam dolorum suscipit cupiditate nam saepe
-              fugit quasi reprehenderit quod? Cupiditate, harum quae eius libero
-              porro unde accusantium repellat?
+              Summary of Project 9, including its development process,
+              implementation, and user experience.
             </p>
-            <a href="" class="btn">BOTÓN</a>
+            <a href="#" class="btn">Learn More</a>
           </div>
         </div>
       </div>
     </section>
+
     <section class="contact">
       <h2 class="contact-title">Contact</h2>
-      <p>
-        Interested in working together or have any questions? Feel free to reach
-        out! Here’s how you can get in touch with me:
-      </p>
       <ul class="contact-list">
-        <li-a>Phone: (53) 99920-2033</li-a>
-        <li-a>Email: vitabarmartin@gmail.com</li-a>
-        <li-a>LinkedIn: linkedin.com/in/martin-vitabar</li-a>
+        <div class="icons">
+          <a href="https://wa.link/hdm9oc" target="_blank"
+            ><img
+              src="./assets/whatsapp.png"
+              alt="Contact via WhatsApp"
+              class="whatsapp"
+          /></a>
+          <a href="https://github.com/MVitabar" target="_blank"
+            ><img
+              src="./assets/github.png"
+              alt="Visit my GitHub profile"
+              class="github"
+          /></a>
+          <a href="https://www.linkedin.com/in/martin-vitabar/" target="_blank"
+            ><img
+              src="./assets/linkedin.png"
+              alt="Connect on LinkedIn"
+              class="linkedin"
+          /></a>
+        </div>
+        <li>
+          <a href="mailto:vitabarmartin@gmail.com"
+            >Email: vitabarmartin@gmail.com</a
+          >
+        </li>
         <li>Location: Florianópolis, SC</li>
       </ul>
     </section>

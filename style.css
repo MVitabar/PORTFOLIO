@@ -11,6 +11,23 @@ body {
     background-size: cover;
 }
 
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 64px;
+
+    & img {
+        width: 64px;
+        margin-top: 25px;
+    }
+
+    & img:hover {
+        opacity: 0.6;
+        transition: 0.5s ease-in-out;
+    }
+}
+
 .main {
     display: flex;
     width: 100%;
@@ -103,6 +120,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .contact-list {
@@ -275,4 +293,20 @@ li-a:hover {
 .contar {
     display: flex;
     flex-direction: column;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.tech-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
 }
