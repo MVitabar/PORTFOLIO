@@ -268,7 +268,7 @@
           </span>
         </h2>
         <div class="contact__form-container">
-          <form action="#" class="contact__form">
+          <form action="#" class="contact__form" id="whatsappForm">
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
               <input
@@ -285,7 +285,7 @@
               <input
                 required
                 placeholder="Enter Your Email"
-                type="text"
+                type="email"
                 class="contact__form-input"
                 name="email"
                 id="email"
@@ -307,6 +307,30 @@
               Submit
             </button>
           </form>
+
+          <script>
+            document
+              .getElementById("whatsappForm")
+              .addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent the form from submitting in the traditional way
+
+                // Get the values from the form
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const message = document.getElementById("message").value;
+
+                // Construct the WhatsApp message URL
+                const whatsappNumber = "5553999202033"; // Replace with your WhatsApp number
+                const whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Name:%20${encodeURIComponent(
+                  name
+                )}%0AEmail:%20${encodeURIComponent(
+                  email
+                )}%0AMessage:%20${encodeURIComponent(message)}`;
+
+                // Redirect to the WhatsApp URL
+                window.open(whatsappURL, "_blank");
+              });
+          </script>
         </div>
       </div>
     </section>
